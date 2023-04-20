@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 54px;
+    min-width: 14rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #e6e7eb;
+}
+
+.header_navwrap {
+    width: 100%;
+    height: 28px;
+}
+
+.header_navbar {
+    position: relative;
+    margin-right: 7rem;
+    padding: 0 1rem 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.header_navbar:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 1rem;
+    background-color: #e6e7eb;
+}
+
+.header_navbar_logo {
+    display: block;
+    height: 28px;
+}
+
+.header_navbar_links {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_navbar_link {
+    cursor: pointer;
+    font-size: .18rem;
+    color: #676b73;
+    margin-left: 3rem;
+    padding: 0.4rem;
+    padding-right: 0.2rem;
+}
+
+.lang_select {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    right: 2rem;
+    top: 1rem;
+    z-index: 999;
+}
+
+.lang_select:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1.8rem;
+    border-top: 2px solid #e9e9e9;
+    transform: rotate(-36deg);
+    transform-origin: top right;
+}
+
+.langf_select_item {
+    margin-top: -0.4rem;
+    vertical-align: middle;
+    color: #dee1e6;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    width: 1rem;
+    height: 1rem;
+}
+
+.langf_select_item_active {
+    color: #676b73
+}
+
+.langf_select_item_en {
+    margin-top: 0.7rem;
+    margin-left: 0.6rem;
+}
+
+.swiper_containter {
+    position: relative;
+    width: 100%;
+}
+
+.swiper {
+    height: 720px;
+}
+
+.home-index {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fg-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fg-page_wrag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.home-index-logo {
+    position: absolute;
+    top: 1rem;
+    left: 2.8rem;
+    z-index: 9;
+    opacity: 1;
+    height: 2rem;
+}
+
+.home-index-logo img {
+    width: 100%;
+    height: 2rem;
+}
+
+.home-index-slg {
+    width: 22rem;
+    height: 14rem;
+    margin-bottom: 1.2rem;
+}
+
+.home-index-slg img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-index-action {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    z-index: 9;
+}
+
+.home-index-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+    background: url(../images/下载3.png) no-repeat 0 0/100% 100%;
+    z-index: 1;
+    transition: all 500ms;
+}
+
+.home-index-action b {
+    position: absolute;
+    margin-left: 0.5rem;
+    width: 0;
+    height: 0;
+    border: 0.4rem solid rgb(0, 0, 0, 0);
+    border-left: 0.5rem solid #fff;
+}
+
+.scroll-btn {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    z-index: 9;
+}
+
+.scroll-btn_mouse {
+    width: 1rem;
+    height: 1.5rem;
+    background: url(../images/下载.svg) no-repeat top center;
+}
+
+.scroll-btn_arrow {
+    position: relative;
+    margin-top: 1rem;
+    width: 0.3rem;
+    height: 1.2rem;
+    overflow: hidden;
+}
+
+.scroll-btn_arrow img {
+    width: 0.3rem;
+    animation: scrollmove 1.4s ease-in-out .4s infinite normal none;
+}
+
+@keyframes scrollmove {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(5rem);
+    }
+}
+
+@-webkit-keyframes scrollmove {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(5rem);
+    }
+}
+
+.home-index_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.home-index_bg video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.home-index-bg_black {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(../images/下载.png) repeat;
+}
+
+.home-product {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fg-page-product_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.home-product-swiper_banner {
+    position: relative;
+    top: 54px;
+    width: 48rem;
+    height: calc(100%-54px);
+    margin: 0 auto;
+}
+
+.home-product-swiper_banner::before {
+    content: "";
+    position: absolute;
+    top: 19.5rem;
+    right: 13.12rem;
+    width: 1.12rem;
+    height: 1.12rem;
+    background-color: #3778e5;
+}
+
+.home-product-swiper_banner-board {
+    position: absolute;
+    top: 19.5rem;
+    left: -18rem;
+    width: 51.4rem;
+    height: 10.5rem;
+    overflow: hidden;
+}
+
+.home-product-swiper_banner-board::before {
+    content: "";
+    position: absolute;
+    width: 12.075rem;
+    height: 7.575rem;
+    top: 0;
+    right: 0;
+    background: url(../images/product-card-bg.2acc93f.png) no-repeat top right;
+    z-index: 1;
+}
+
+.home-product-swiper_banner-board::after {
+    content: "";
+    position: absolute;
+    width: 1.425rem;
+    height: 1.275rem;
+    bottom: 0;
+    right: 0;
+    background: url(../images/下载4.png) no-repeat top right/cover;
+    z-index: 1;
+}
+
+.home-product-swiper_banner-box {
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    min-width: 51.4rem;
+    height: 30rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-product-swiper_banner-box img {
+    height: 30rem;
+    overflow-y: hidden;
+}
+
+.home-product-swiper_banner-btn {
+    position: absolute;
+    top: 17rem;
+    left: 22.5rem;
+    width: 8.4rem;
+    height: 3.6rem;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.home-product-swiper_banner-btn_box {
+    position: absolute;
+    left: 0;
+    width: 8.4rem;
+    height: 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 800ms ease-in;
+    transition-delay: 600ms;
+}
+
+.home-product-swiper_banner-btn_box-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.4rem;
+    height: 3.6rem;
+    background: url(../images/icon-play-bg.acf8bb6.png) no-repeat 0 0/100% 100%;
+    overflow: hidden;
+}
+
+.home-product-swiper_banner-btn_box-bg b {
+    width: 0;
+    height: 0;
+    border: 0.375rem solid rgb(0, 0, 0, 0);
+    border-left: 0.6rem solid #3d424d;
+    position: relative;
+    margin-left: 0.375rem;
+    z-index: 1;
+}
+
+.home-product-swiper_banner-btn_text {
+    position: absolute;
+    width: 0;
+    height: 0.9rem;
+    line-height: .9rem;
+    left: 2.4rem;
+    bottom: -1.3rem;
+    font-size: 0.675rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: width 1200ms cubic-bezier(0.17, 0.67, 0.22, 1.03);
+    transition-delay: 600ms;
+}
+
+.home-product-swiper_banner-btn_text span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    text-align: right;
+}
+
+.home-product-swiper_info {
+    position: absolute;
+    top: 4.25rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 9;
+}
+
+.home-product-swiper_info-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.home-product-swiper_info-name img {
+    height: 3.3rem;
+}
+
+.home-product-swiper_info-name .enname {
+    margin-top: 0.525rem;
+    font-family: HarmonyOS, Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    background: linear-gradient(-135deg, #3778e5, #e98bc0, #3778e5, #e98bc0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+    color: transparent;
+    animation: mask-anima 3s linear infinite;
+}
+
+@keyframes mask-anima {
+    0% {
+        background: linear-gradient(-135deg, #3778e5, #e98bc0, #3778e5, #e98bc0);
+    }
+    100% {
+        background: linear-gradient(to right, #3778e5, #e98bc0);
+    }
+}
+
+@-webkit-keyframes mask-anima {
+    0% {
+        background: linear-gradient(-135deg, #3778e5, #e98bc0, #3778e5, #e98bc0);
+    }
+    100% {
+        background: linear-gradient(to right, #3778e5, #e98bc0);
+    }
+}

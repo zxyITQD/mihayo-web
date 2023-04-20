@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miHoYo</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!-- swiper.css -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="header" style="display:none;">
+        <div class="header_navwrap">
+            <div class="header_navbar">
+                <img class="header_navbar_logo" src="../images/mihoyo-logo.png" alt="miHoYo">
+                <div class="header_navbar_links">
+                    <a href="#" class="header_navbar_link"><span>首页</span></a>
+                    <a href="#" class="header_navbar_link"><span>产品信息</span></a>
+                    <a href="#" class="header_navbar_link"><span>了解我们</span></a>
+                    <a href="#" class="header_navbar_link"><span>加入我们</span></a>
+                    <a href="#" class="header_navbar_link"><span>新闻信息</span></a>
+                </div>
+            </div>
+            <div class="lang_select">
+                <div class="langf_select_item langf_select_item_active">CH</div>
+                <div class="langf_select_item langf_select_item_en">EN</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="home">
+        <div class="swiper-containter swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="home-index fg-page">
+                        <div class="fg-page_wrag">
+                            <div class="home-index-logo">
+                                <img src="../images/logo.png" alt>
+                            </div>
+                            <div class="home-index-slg">
+                                <img src="../images/slogan@2x.301d3f9.png" alt>
+                            </div>
+                            <div class="home-index-action">
+                                <div class="home-index-btn">
+                                    <b></b>
+                                </div>
+
+                            </div>
+                            <div class="scroll-btn">
+                                <div class="scroll-btn_mouse"></div>
+                                <div class="scroll-btn_arrow">
+                                    <img src="../images/下载2.svg" alt>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-index_bg">
+                            <video src="../video/米哈游.mp4" autoplay muted loop poster="../images/poster.png"></video>
+                        </div>
+                        <div class="home-index-bg_black"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-product fg-page">
+                        <div class="fg-page-product_wrap">
+                            <div class="swiper-containter swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="wrapper">
+                                            <div class="home-product-swiper_banner">
+                                                <div class="home-product-swiper_banner-board">
+                                                    <img src="../images/swiperbg.png" alt>
+                                                </div>
+                                                <div class="home-product-swiper_banner-box">
+                                                    <img src="../images/崩坏2.png" alt>
+                                                </div>
+                                                <div class="home-product-swiper_banner-btn">
+                                                    <div class="home-product-swiper_banner-btn_box">
+                                                        <div class="home-product-swiper_banner-btn_box-bg"><b></b></div>
+                                                    </div>
+                                                    <div class="home-product-swiper_banner-btn_text">
+                                                        <span>INTRO VIDEO</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="home-product-swiper_info">
+                                                <div class="home-product-swiper_info-name">
+                                                    <img src="../images/崩坏2infoname.png" alt>
+                                                    <span class="enname">Houkai Gakuen 2</span>
+                                                </div>
+                                                <div class="home-product-swiper_info-slash"></div>
+                                                <div class="home-product-swiper_info-desc"></div>
+                                                <div class="home-product-swiper_info-touch"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">slide2</div>
+                                        <div class="swiper-slide">slide3</div>
+                                        <div class="swiper-slide">slide4</div>
+                                        <div class="swiper-slide">slide5</div>
+                                        <div class="swiper-slide">slide6</div>
+                                        <div class="swiper-slide">slide7</div>
+                                        <div class="swiper-slide">slide8</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="home-product-nav"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+
+            </div>
+            <div class="aside_slogan"></div>
+            <div class="scroll_btn aside_scroll"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <script src="../js/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".swiper", {
+                direction: "vertical",
+                mousewheel: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+            var swiper2 = new Swiper(".swiper2", {
+                autoplay: true,
+                loop: true,
+            })
+        </script>
+</body>
+
+</html>
